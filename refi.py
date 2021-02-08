@@ -6,7 +6,8 @@ INIT_YEARS = 30
 PAYMENT_PER_YEAR = 12
 INIT_MONTHS_PAID = 14
 
-# How much initial principle is paid
+# How much initial principle was paid on the month of closing, e.x. $500. This is a small adjustment to make the calculation more accurate. 
+# You can easily find it on the mortgate portal, or, set it to zero to simplify the calculation.
 INIT_PRINCIPLE_PAID = 0
 
 REFI_LOAN_RATE = 0.026
