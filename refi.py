@@ -4,7 +4,7 @@ INIT_LOAN_AMOUNT = 1000000
 INIT_LOAN_RATE = 0.02875
 INIT_YEARS = 30
 PAYMENT_PER_YEAR = 12
-INIT_MONTHS_PAID = 0
+INIT_MONTHS_PAID = 14
 
 # How much initial principle is paid
 INIT_PRINCIPLE_PAID = 0
@@ -43,6 +43,7 @@ total_intest_without_refi = total_intest_without_refi
 total_intest_with_refi = init_total_interst+refi_total_interest
 total_intest_saving_with_refi = total_intest_without_refi - total_intest_with_refi
 
+print("Monthly cashflow savings {montly_saving}".format(montly_saving=init_monthly - refi_monthly))
 print("Total interest without refi {total_intest_without_refi}".format(total_intest_without_refi=total_intest_without_refi))
 print("Total interest with refi {total_intest_with_refi}".format(total_intest_with_refi=total_intest_with_refi))
 print("Total saving with refi {total_intest_saving_with_refi}".format(total_intest_saving_with_refi=total_intest_saving_with_refi))
